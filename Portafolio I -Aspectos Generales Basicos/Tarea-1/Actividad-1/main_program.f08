@@ -39,10 +39,10 @@ WRITE (*,*) 'dada por el usuario.'
                         DO, i=0, n
                             WRITE(1,*) xi+i*res, F(a,b,c,xi+i*res)
                         END DO
-                        WRITE (*,*) 'Se ha generado el archivo "data_file.dat"'
-                        WRITE (*,*) 'utilizando la informacion anterior'
-                        WRITE (*,*) 'La funcion evaluada en x=', x, 'es'
-                        WRITE (*,*) 'f(',x,')=', f(a,b,c,x)
+                            WRITE (*,*) 'Se ha generado el archivo "data_file.dat"'
+                            WRITE (*,*) 'utilizando la informacion anterior'
+                            WRITE (*,*) 'La funcion evaluada en x=', x, 'es'
+                            WRITE (*,*) 'f(',x,')=', f(a,b,c,x)
                     ELSE
                             WRITE(*,*) 'x/e[xi,xf]'
                     END IF 
