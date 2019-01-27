@@ -49,6 +49,8 @@ WRITE (*,*) 'dada por el usuario.'
         ELSE 
             WRITE (*,*) 'Escoge una de las opciones escribiendo 1 o 2'
         END IF
+!Cerrar y terminar
+CLOSE(1)
 END PROGRAM functions
 
 !--------------------Function to evaluate----------------------------|
