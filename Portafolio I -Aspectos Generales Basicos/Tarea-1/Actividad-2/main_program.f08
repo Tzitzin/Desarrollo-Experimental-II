@@ -75,5 +75,5 @@ END IF
   END DO
 
 !Cerrar y terminar
-CLOSE(1)
+CLOSE(10)
 END PROGRAM particle_1D
