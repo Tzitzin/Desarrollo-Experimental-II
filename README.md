@@ -5,6 +5,7 @@ de datos (en extensión .dat) y algunos ejemplos en formato PNG. Además, se inc
 
 ## Material Disponible
 **Portafolio 1 [Aspectos Generales Básicos]**
+  - *CÓDIGOS DE CLASE*
   - *TAREA 1*
     - Actividad 1
     - Actividad 2
