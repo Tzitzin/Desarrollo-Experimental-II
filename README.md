@@ -3,4 +3,7 @@ En este repositorio se encuentra el material desarrollado en el curso de Desarro
 de la Universidad de Sonora. En cada una de las carpetas de las actividades solicitadas se encuentra el código del programa (main, subroutine, etc.), archivos
 de datos (en extensión .dat) y algunos ejemplos en formato PNG.
 
-# Material Disponible
+## Material Disponible
+-**Portafolio 1 [Aspectos Generales Básicos]**
+  - Actividad 1
+  - Actividad 2
