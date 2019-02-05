@@ -4,6 +4,14 @@ de la Universidad de Sonora. En cada una de las carpetas de las actividades soli
 de datos (en extensión .dat) y algunos ejemplos en formato PNG.
 
 ## Material Disponible
--**Portafolio 1 [Aspectos Generales Básicos]**
-  - Actividad 1
-  - Actividad 2
+**Portafolio 1 [Aspectos Generales Básicos]**
+  - *TAREA 1*
+    - Actividad 1
+    - Actividad 2
+    - Actividad 3
+    - Resumen de las tres actividades
+  - *TAREA 2*
+    - Actividad 1
+    - Actividad 2
+    - Actividad 3
+    - Actividad 4 
