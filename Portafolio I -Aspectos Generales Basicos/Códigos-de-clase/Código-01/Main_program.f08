@@ -38,7 +38,7 @@ PROGRAM CODIGO4
 !-------------------- Output data into a file ---------------------------------------|
         OPEN (12, FILE = '02confi_fi.dat',    STATUS = 'unknown') 
         OPEN (13, FILE = '03trazadora.dat',   STATUS = 'unknown')
-        OPEN (14, FILE = '04Information.dat', STATUS = 'unknown')
+!       OPEN (14, FILE = '04Information.dat', STATUS = 'unknown')
 ! 12: Configuración final.
 ! 13: Historia de la partícula arbitraria NP.
 ! 14: Información sobre la simulación.
@@ -73,7 +73,7 @@ PROGRAM CODIGO4
     KI2=0                           
 
 ! Escribir datos de entrada en pantalla ---------------------------------------------|
-    WRITE(*,*) '-----------------------------------------------------------------'
+    WRITE(*,*) '---------------------------------------------------------------------'
     WRITE(*,*) 'VERIFICA QUE HAYAS REGISTRADO LOS DATOS CORRECTOS:'
     WRITE(*,*) 'Numero de particulas            N = ',  N
     WRITE(*,*) 'Tamano del ensemble           NN2 = ',  NN2
@@ -181,7 +181,7 @@ CALL CONFIGINI(N, BOXL, X, Y)
 ! Cierre de archivos ---------------------------------------------------------------|
     CLOSE(12)
     CLOSE(13)
-    CLOSE(14)
+!   CLOSE(14)
 
 ! Finalizar programa ---------------------------------------------------------------|
 END PROGRAM CODIGO4
