@@ -119,19 +119,17 @@ CALL CONFIGINI(N, BOXL, X, Y)
 ! Hemos "seleccionado" qué particula seguir.
 ! °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°|
 
-
 ! Movimiento arbitrario aleatorio    
     DO ISTEP = 1, NSTEP
         DO I = 1, N
-            Call init_random_seed()
             Call random_number(ISEED)
             Call random_number(JSEED)
                     X(I) = X(I) + (2.0*ISEED - 1.0)*DRMAX
                     Y(I) = Y(I) + (2.0*JSEED - 1.0)*DRMAX
 
 ! Condiciones periódicas: ninguna partícula queda fuera de la celda 
-                    X(I) = X(I)-BOXL*NINT(X(I)/BOXL)
-                    Y(I) = Y(I)-BOXL*NINT(Y(I)/BOXL)
+                    X(I) = X(I)-BOXL*ANINT(X(I)/BOXL)
+                    Y(I) = Y(I)-BOXL*ANINT(Y(I)/BOXL)
 
 
                     
