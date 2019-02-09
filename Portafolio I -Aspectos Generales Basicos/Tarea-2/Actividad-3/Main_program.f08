@@ -1,12 +1,12 @@
 !================================================================================|
 ! Thursday, January 31, 2019  
-! Movimiento arbitrario de las N partículas para un sistema de discos du-
-! ros alejados de las fronteras (en bulto).
+! Movimiento arbitrario de las N partículas para un sistema de discos duros ale-
+! jados de las fronteras (en bulto).
 !================================================================================|
 
-PROGRAM CODIGO4
+PROGRAM CA_2D
     IMPLICIT NONE
-        REAL    :: AA, BOXL, PHIT, RCUT, N_STAR
+        REAL    :: AA, BOXL, RCUT, DENS
         INTEGER :: N
         REAL, ALLOCATABLE   :: X(:), Y(:)
         REAL, PARAMETER     :: PI = 3.1415927 
@@ -15,8 +15,8 @@ PROGRAM CODIGO4
 ! Lectura de datos de entrada ---------------------------------------------------|
     WRITE(*,*) 'Introduzca el numero de particulas (N)'
         READ (*,*) N
-    WRITE(*,*) 'Introduzca la fraccion en area (PHI)'
-        READ (*,*) PHIT
+    WRITE(*,*) 'Introduzca la densidad reducida (DENS)'
+        READ (*,*) DENS
 
 ! Allocate positions ------------------------------------------------------------|
         allocate(X(N))
@@ -24,20 +24,26 @@ PROGRAM CODIGO4
 
 ! Cálculos preeliminares --------------------------------------------------------|
     AA=1.0/2.0
-    N_STAR=4*PHIT/PI
-    BOXL=((1.0*N)/N_STAR)**AA
+    BOXL=((1.0*N)/DENS)**AA
     RCUT=BOXL/2.0
 
 ! Escribir datos de entrada en pantalla -----------------------------------------|
     WRITE(*,*) '-----------------------------------------------------------------'
     WRITE(*,*) 'Numero de particulas          N =',  N
-    WRITE(*,*) 'La concentracion en area es PHI =',  PHIT
+    WRITE(*,*) 'La densidad critica es     DENS =',  DENS
     WRITE(*,*) 'Longitud de la celda         L* =',  BOXL
     WRITE(*,*) 'El rango de la celda es         =', '[', -BOXL/2, ',' ,BOXL/2, ']' 
     WRITE(*,*) '-----------------------------------------------------------------'
 
 ! Configuración inicial aleatoria sin traslapes: ejecución en subrutina ---------|
-CALL CONFIGINI(BOXL, N)
+CALL CONFIGINI(N, BOXL, X, Y)
+
+! Información
+WRITE(*,*) 'El programa ha terminado de manera exitosa. Se ha generado el archivo'
+WRITE(*,*) '"confi_in.dat" con la informacion calculada, cuyo formato es:'
+WRITE(*,*) '-----------------------'
+WRITE(*,*) '   I   |   X   |   Y   '
+WRITE(*,*) '-----------------------'
 
 ! Finalizar programa -----------------------------------------------------------|
-END PROGRAM CODIGO4
+END PROGRAM CA_2D
