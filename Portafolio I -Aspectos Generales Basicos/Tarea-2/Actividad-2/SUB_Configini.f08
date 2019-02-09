@@ -1,36 +1,32 @@
-!=========================================================================|
+!============================================================================================|
 ! Thursday, January 31, 2019  
-! Subrutina para crear configuración inicial aleatoria en una celda tridi-
-! mensional "sin traslapes". 
+! Subrutina para crear configuración inicial aleatoria en una celda tres-dimensional "sin 
+! traslapes". 
 ! Condición: los centros de las partículas se están dentro de la celda
-!=========================================================================|
+!============================================================================================|
 
-SUBROUTINE CONFIGINI(BOXL, N)
+SUBROUTINE CONFIGINI(N, BOXL, X, Y, Z)
 
 IMPLICIT NONE
-        REAL, INTENT(IN)        :: BOXL
-        INTEGER, INTENT(IN)     :: N
-        REAL                    :: SIGMA, R, S, T, Xij, Yij, Zij, RO, ISEED1, ISEED2, ISEED3
-        INTEGER                 :: I, J
-        REAL, ALLOCATABLE       :: X(:), Y(:), Z(:)
+        REAL, INTENT(IN)                :: BOXL
+        INTEGER, INTENT(IN)             :: N
+        REAL, DIMENSION(N), INTENT(OUT) :: X, Y, Z
+        REAL                            :: SIGMA, R, S, T, Xij, Yij, Zij, RO
+        REAL                            :: ISEED1, ISEED2, ISEED3
+        INTEGER                         :: I, J
 
-!-------------------- Output data into a file --------------------------S1|
+!-------------------- Output data into a file -----------------------------------------------|
         open (unit = 10, file = "confi_in.dat", status = 'unknown')
-!-----------------------------------------------------------------------E1|
+!--------------------------------------------------------------------------------------------|
 
-! Allocate positions -----------------------------------------------------|
-  allocate(X(N))
-  allocate(Y(N))
-  allocate(Z(N))
-
-! Genedador de números aleatorios ----------------------------------------|
-  Call init_random_seed()
-
-! Semillas ---------------------------------------------------------------|
+! Semillas ----------------------------------------------------------------------------------|
     SIGMA=1.0
     ISEED1=456.0
     ISEED2=784.0
     ISEED3=7267.2
+
+! Genedador de números aleatorios -----------------------------------------------------------|
+    Call init_random_seed()
 
 DO 10 I=1, N
 2   Call random_number(ISEED1)
