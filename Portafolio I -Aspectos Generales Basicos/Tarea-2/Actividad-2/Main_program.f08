@@ -1,10 +1,10 @@
 !================================================================================|
 ! Thursday, January 31, 2019  
-! Movimiento arbitrario de las N partículas para un sistema de discos du-
-! ros alejados de las fronteras (en bulto).
+! Movimiento arbitrario de las N partículas para un sistema de esferas duras ale-
+! jadas de las fronteras (en bulto).
 !================================================================================|
 
-PROGRAM CODIGO4
+PROGRAM CA_3D
     IMPLICIT NONE
         REAL    :: AA, BOXL, DENS, RCUT
         INTEGER :: N
@@ -36,7 +36,15 @@ PROGRAM CODIGO4
     WRITE(*,*) '----------------------------------------------------'
 
 ! Configuración inicial aleatoria sin traslapes: ejecución en subrutina ---------|
-CALL CONFIGINI(BOXL, N)
+CALL CONFIGINI(N, BOXL, X, Y, Z)
 
-! Finalizar programa -----------------------------------------------------------|
-END PROGRAM CODIGO4
+! Información
+
+WRITE(*,*) 'El programa ha terminado de manera exitosa. Se ha generado el archivo'
+WRITE(*,*) '"confi_in.dat" con la informacion calculada, cuyo formato es:'
+WRITE(*,*) '-------------------------------'
+WRITE(*,*) '   I   |   X   |   Y   |   Z   '
+WRITE(*,*) '-------------------------------'
+
+! Finalizar programa ------------------------------------------------------------|
+END PROGRAM CA_3D
