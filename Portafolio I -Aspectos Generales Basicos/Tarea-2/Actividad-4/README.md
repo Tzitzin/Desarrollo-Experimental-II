@@ -1,3 +1,4 @@
 # Anotaciones
-  - **Main_program.f08**:  es el programa principal
-  - **SUB_Configini.f08**: es una subrutina para generar una configuración inicial regular cúbica. 
+A continuación se describe el contenido de cada carpeta.
+  - **Versión_1**:  Debe especificarse el número de partículas por lado del cubo.
+  - **Versión_2**:  Debe especificarse el número total de partículas N**3. 
