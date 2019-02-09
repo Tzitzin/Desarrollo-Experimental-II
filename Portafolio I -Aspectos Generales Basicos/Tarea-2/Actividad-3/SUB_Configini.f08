@@ -5,31 +5,29 @@
 ! Condición: los centros de las partículas se están dentro de la celda
 !=========================================================================|
 
-SUBROUTINE CONFIGINI(BOXL, N)
+SUBROUTINE CONFIGINI(N, BOXL, X, Y)
 
 IMPLICIT NONE
-        REAL, INTENT(IN)        :: BOXL
-        INTEGER, INTENT(IN)     :: N
-        REAL                    :: SIGMA, R, S, Xij, Yij, RO, ISEED1, ISEED2
-        INTEGER                 :: I, J
-        REAL, ALLOCATABLE       :: X(:), Y(:)
+    REAL, INTENT(IN)                :: BOXL
+    INTEGER, INTENT(IN)             :: N
+    REAL, DIMENSION(N), INTENT(OUT) :: X, Y
+    REAL                            :: SIGMA, R, S, Xij, Yij, RO
+    REAL                            :: ISEED1, ISEED2
+    INTEGER                         :: I, J
 
 !-------------------- Output data into a file --------------------------S1|
         open (unit = 10, file = "confi_in.dat", status = 'unknown')
 !-----------------------------------------------------------------------E1|
-
-! Allocate positions -----------------------------------------------------|
-  allocate(X(N))
-  allocate(Y(N))
-
-! Genedador de números aleatorios ----------------------------------------|
-  Call init_random_seed()
 
 ! Semillas ---------------------------------------------------------------|
     SIGMA=1.0
     ISEED1=456.0
     ISEED2=784.0
 
+
+! Genedador de números aleatorios ----------------------------------------|
+    Call init_random_seed()
+        
 DO 10 I=1, N
 2   Call random_number(ISEED1)
     Call random_number(ISEED2)
