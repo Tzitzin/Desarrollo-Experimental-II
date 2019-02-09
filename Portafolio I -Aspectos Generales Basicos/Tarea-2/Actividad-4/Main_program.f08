@@ -21,7 +21,7 @@ PROGRAM particle_3D
         REAL, ALLOCATABLE :: X(:), Y(:), Z(:)
 
 ! Lectura de datos de entrada ------------------------------------------------|        
-WRITE(*,*) 'Introduzca el numero de particulas'
+WRITE(*,*) 'Introduzca el numero de particulas por lado'
     READ (*,*) N
 WRITE(*,*) 'Introduzca la densidad reducida'
     READ (*,*) DENS
