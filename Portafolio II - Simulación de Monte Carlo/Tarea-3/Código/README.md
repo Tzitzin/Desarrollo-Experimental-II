@@ -54,5 +54,5 @@ por
     END DO
 
 
-Finalmente modificar PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i) por *PSS = DENS + (1.0/2.0)*PI*(DENS*DENS)*gY(i)*.
+Finalmente sustituir PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i) por *PSS = DENS + (1.0/2.0)*PI*(DENS*DENS)*gY(i)* para la segunda parte de la actividad 5.
 
