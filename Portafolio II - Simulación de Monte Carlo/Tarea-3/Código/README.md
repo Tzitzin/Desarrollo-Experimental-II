@@ -12,13 +12,13 @@
     
 por
 
-
+```fortran
         CALL CONFINI_REGULAR_2D(N, BOXL, X, Y)
-        
+```          
 
 **Actividad 2:** En el archivo *SUB_Configini_aleatoria.f08* eliminar las lineas:
 
-
+```fortran
      DO 9 J=1, I-1
          Xij=X(I)-X(J)
          Yij=Y(I)-Y(J)
@@ -28,9 +28,9 @@ por
                 GO TO 2
             END IF
      9 CONTINUE
+```
 
-
-**Actividad 3:** En el archivo *SUB_g(r).f08* cambiar el valor de DELTAR=0.01E0 por DELTAR=0.1E0. 
+**Actividad 3:** En el archivo *SUB_g(r).f08* cambiar el valor de ```fortran DELTAR=0.01E0 ``` por ```fortran DELTAR=0.1E0. ```
 
 
 **Actividad 4:** No hacer modificaciones. 
@@ -38,7 +38,7 @@ por
 
 **Actividad 5:** En el archivo *SUB_g(r).f08* agregar las siguientes lineas después de calcular la g(r),
 
-
+```fortran
 ! APERTURA DE ARCHIVOS 
 
 
@@ -56,7 +56,7 @@ por
             EXIT
             END IF  
     END DO
+```
 
-
-Finalmente sustituir PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i) por *PSS = DENS + (1.0/2.0)*PI*(DENS*DENS)*gY(i)* para la segunda parte de la actividad 5.
+Finalmente sustituir ```fortran PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i)``` por ```fortran PSS = DENS + (1.0/2.0)*PI*(DENS*DENS)*gY(i)``` para la segunda parte de la actividad 5.
 
