@@ -17,6 +17,7 @@ de datos (en extensión .dat) y algunos ejemplos en formato PNG. Además, se inc
     - Actividad 3
     - Actividad 4 
     - Resumen de actividades
+
 **Portafolio 2 [Simulación de Monte Carlo]**
   - *TAREA 3*
     - Actividad 1
