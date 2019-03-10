@@ -39,13 +39,13 @@ por
 **Actividad 5:** En el archivo *SUB_g(r).f08* agregar las siguientes lineas después de calcular la g(r),
 
 
-! APERTURA DE ARCHIVOS -----------------------------------------------------------------|
+! APERTURA DE ARCHIVOS 
 
 
     OPEN (50, FILE = "06g(r).dat", STATUS = "unknown")
 
 
-! IDENTIFICAR g(1+) (g(r) DE CONTACTO) Y CALCULAR LA PRESIÓN ---------------------------|
+! IDENTIFICAR g(1+) (g(r) DE CONTACTO) Y CALCULAR LA PRESIÓN 
 
 
     DO I= 1, MAXBIN
