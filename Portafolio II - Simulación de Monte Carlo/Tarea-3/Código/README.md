@@ -30,7 +30,14 @@ por
      9 CONTINUE
 ```
 
-**Actividad 3:** En el archivo *SUB_g(r).f08* cambiar el valor de ```fortran DELTAR=0.01E0 ``` por ```fortran DELTAR=0.1E0. ```
+**Actividad 3:** En el archivo *SUB_g(r).f08* cambiar el valor de 
+```fortran 
+DELTAR=0.01E0 
+``` 
+por 
+```fortran 
+DELTAR=0.1E0. 
+```
 
 
 **Actividad 4:** No hacer modificaciones. 
@@ -40,14 +47,8 @@ por
 
 ```fortran
 ! APERTURA DE ARCHIVOS 
-
-
     OPEN (50, FILE = "06g(r).dat", STATUS = "unknown")
-
-
 ! IDENTIFICAR g(1+) (g(r) DE CONTACTO) Y CALCULAR LA PRESIÓN 
-
-
     DO I= 1, MAXBIN
         READ(50,*) gX(i), gY(i)
             IF(gY(i)/=0.0) THEN 
