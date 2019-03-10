@@ -40,17 +40,35 @@ por
 
 
 ! APERTURA DE ARCHIVOS -----------------------------------------------------------------|
+
+
     OPEN (50, FILE = "06g(r).dat", STATUS = "unknown")
 
 
 ! IDENTIFICAR g(1+) (g(r) DE CONTACTO) Y CALCULAR LA PRESIÓN ---------------------------|
+
+
     DO I= 1, MAXBIN
+    
+    
         READ(50,*) gX(i), gY(i)
+        
+        
             IF(gY(i)/=0.0) THEN 
+            
+            
             PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i)
+            
+            
                 WRITE(17,*) DENS, gY(i), PSS
+                
+                
             EXIT
+            
+            
             END IF
+            
+            
     END DO
 
 
