@@ -1,4 +1,4 @@
-# Cambios al código segun la actividad
+# Cambios al código según la actividad
 
 **Actividad 1:** En el archivo *Main_program.f08* sustituir las lineas:
 
