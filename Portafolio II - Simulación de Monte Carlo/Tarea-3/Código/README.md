@@ -59,5 +59,13 @@ DELTAR=0.1E0.
     END DO
 ```
 
-Finalmente sustituir ```fortran PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i)``` por ```fortran PSS = DENS + (1.0/2.0)*PI*(DENS*DENS)*gY(i)``` para la segunda parte de la actividad 5.
+Finalmente sustituir 
+```fortran 
+PSS = 1.0 + (1.0/2.0)*PI*DENS*gY(i)
+``` 
+por 
+```fortran 
+PSS = DENS + (1.0/2.0)*PI*(DENS*DENS)*gY(i)
+``` 
+para la segunda parte de la actividad 5.
 
