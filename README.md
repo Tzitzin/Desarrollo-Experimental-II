@@ -11,12 +11,14 @@ de datos (en extensión .dat) y algunos ejemplos en formato PNG. Además, se inc
     - Actividad 2
     - Actividad 3
     - Resumen de actividades
+    - Archivos utilizados
   - *TAREA 2*
     - Actividad 1
     - Actividad 2
     - Actividad 3
     - Actividad 4 
     - Resumen de actividades
+    - Archivos utilizados
 
 **Portafolio 2 [Simulación de Monte Carlo]**
   - *TAREA 3*
@@ -26,3 +28,8 @@ de datos (en extensión .dat) y algunos ejemplos en formato PNG. Además, se inc
     - Actividad 4
     - Actividad 5
     - Resumen de actividades
+    - Archivos utilizados
+  - *TAREA 4*
+    - Actividad sin número
+    - Resumen de actividades
+    - Archivos utilizados
