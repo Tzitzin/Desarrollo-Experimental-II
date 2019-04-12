@@ -1,0 +1,16 @@
+ DATOS DE LA SIMULACION:
+    Numero de particulas            N =          343
+    Configuraciones totales     NSTEP =        40000
+    Configuracion de equilibrio NENER =        35000
+    Frecuencia de muestreo      ISAVE =            1
+    Correcion de paso          IRATIO =          200
+    Tamano del ensemble           NN2 =         5000
+    Densidad reducida              n* =   0.80000000000000004     
+    Desplazamiento max. inicial DRMAX =   0.10000000000000001     
+    Criterio de aceptacion  ACEPRATIO =   0.50000000000000000     
+    Longitud de la celda           L* =    7.5405218691216778     
+    Temperatura reducida           T* =    10000000.000000000     
+    Valor de                       K* =    1.0000000000000000     
+ Energia de la configuracion inicial:  -21919.785553256879     
+ Presion de la configuracion inicial:  -10.364571261621373     
+ El valor de la presion promedio es P=  -6.1695645216258456E-002
