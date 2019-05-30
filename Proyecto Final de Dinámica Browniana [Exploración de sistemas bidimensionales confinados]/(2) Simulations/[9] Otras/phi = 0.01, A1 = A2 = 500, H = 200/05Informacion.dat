@@ -1,0 +1,18 @@
+ DATOS DE LA SIMULACION:
+    Numero de particulas            N =          216
+    Configuraciones totales     NSTEP =       100000
+    Configuracion de equilibrio NENER =        80000
+    Frecuencia de muestreo      NFREC =            2
+    Frecuencia de muestreo     NFREC2 =            2
+    Tamano del ensemble           NN2 =        10000
+    Fraccion en volumen           PHI =    1.0000000000000000E-002
+    Densidad reducida              n* =    1.2732395093040454E-002
+    Tiempo de paso                 DT =    1.0000000000000000E-004
+    Longitud de la celda           L* =    84.823004007339478     
+    Varianza                      VAR =    1.4142135623730951E-002
+    Tipo de configuracion        TYPE =            2
+    Valor del coeficiente          A* =    500.00000000000000     
+    Valor del coeficiente          k* =   0.14900000393390656     
+    Valor del coeficiente         A1* =    500.00000000000000     
+    Valor del coeficiente         A2* =    500.00000000000000     
+    Valor del ancho                H* =    200.00000000000000     
