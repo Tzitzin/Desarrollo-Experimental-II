@@ -1,0 +1,14 @@
+ DATOS DE LA SIMULACION:
+    Numero de particulas            N =          512
+    Configuraciones totales     NSTEP =        40000
+    Configuracion de equilibrio NENER =        20000
+    Frecuencia de muestreo      ISAVE =            2
+    Correcion de paso          IRATIO =          200
+    Tamano del ensemble           NN2 =        10000
+    Densidad reducida              n* =   0.90000000000000002     
+    Desplazamiento max. inicial DRMAX =   0.10000000000000001     
+    Criterio de aceptacion  ACEPRATIO =   0.10000000000000001     
+    Longitud de la celda           L* =    8.2859538713815564     
+    Ancho del pozo cuadrado    lambda =    1.2500000000000000     
+    Temperatura reducida           T* =    1.0000000000000000     
+ Energia de la configuracion inicial:  -1536.0000000000000     
