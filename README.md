@@ -33,3 +33,17 @@ de datos (en extensión .dat) y algunos ejemplos en formato PNG. Además, se inc
     - Actividad sin número
     - Resumen de actividades
     - Archivos utilizados
+    
+**Portafolio 3 [Simulación de Dinámica Browniana]**
+  - *TAREA 5*
+    - Actividad 1
+    - Actividad 2
+    - Actividad 3
+    - Actividad 4
+    - Actividad 5
+    - Resumen de actividades
+    - Archivos utilizados    
+    
+**PROYECTOS FINALES**
+  - *Monte Carlo: Explorando la ecuación de Van der Waals*
+  - *Dinámica Browniana: Exploración de sistemas bidimensionales confinados*
