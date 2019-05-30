@@ -1,0 +1,12 @@
+ DATOS DE LA SIMULACION:
+    Numero de particulas            N =          216
+    Configuraciones totales     NSTEP =       100000
+    Configuracion de equilibrio NENER =        80000
+    Frecuencia de muestreo      NFREC =            2
+    Frecuencia de muestreo     NFREC2 =            2
+    Tamano del ensemble           NN2 =        10000
+    Densidad reducida              n* =    5.7295777918682051E-003
+    Tiempo de paso                 DT =    2.9999999999999999E-002
+    Longitud de la celda           L* =    33.530787685409912     
+    Varianza                      VAR =   0.24494897427831780     
+    Tipo de configuracion        TYPE =            2
